@@ -7,7 +7,7 @@ footer {
 }
 
 footer a {
-    color: var( --dark-body-bg);
+    color: var(--dark-body-bg);
 }
 
 .footer__logo {
@@ -33,7 +33,7 @@ footer a {
 }
 
 .footer__socials a {
-    background:var(--dark-body-bg);
+    background: var(--dark-body-bg);
     color: white;
     padding: 0.8rem;
     border-radius: 0.7rem;
@@ -53,7 +53,7 @@ footer a {
 }
 
 @media screen and (max-width: 600px) {
-    .permalinks{
+    .permalinks {
         flex-direction: column;
         gap: 1.5rem;
     }

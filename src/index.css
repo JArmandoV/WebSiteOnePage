@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,12 +7,13 @@
   list-style: none;
   text-decoration: none;
 }
+
 :root {
-  --color-primary:rgb(249,84,83);
+  --color-primary: rgb(249, 84, 83);
   --color-hover: #5d2d8a;
 
-  --color-primary-variant: rgba(129,34,122,0.4);
-  --color-light: rgba(255,255,255,0.6);
+  --color-primary-variant: rgba(129, 34, 122, 0.4);
+  --color-light: rgba(255, 255, 255, 0.6);
 
   --dark-body-bg: #222736;
   --dark-headerfooter-bg: #36394c;
@@ -31,62 +32,70 @@
   --transition: all 400ms ease;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
-  display:none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-body{
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
-    background: var(--dark-body-bg);
-    color: var(--dark-text-color-);
-    line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
+  background: var(--dark-body-bg);
+  color: var(--dark-text-color-);
+  line-height: 1.7;
+  background-image: url(../src/assets/bg-texture.png);
 }
 
 /* =====================  GENERAL STYLES ============================= */
-.container{
+.container {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 500;
 }
-h1{
+
+h1 {
   font-size: 2.5rem;
 }
 
-section{
+section {
   margin-top: 8rem;
 }
 
-section > h2, section > h5 {
+section>h2,
+section>h5 {
   text-align: center;
   color: var(--color-light);
 }
 
-section > h2{
+section>h2 {
   color: var(--color-primary);
   margin-bottom: 3rem;
 }
 
-.text-light{
+.text-light {
   color: var(--color-light);
 }
-a{
+
+a {
   color: var(--color-primary);
   transition: var(--transition);
 }
-a:hover{
+
+a:hover {
   color: var(--dark-text-color-)
 }
 
-.btn{
+.btn {
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
@@ -97,38 +106,41 @@ a:hover{
   transition: var(--transition);
 }
 
-.btn:hover{
+.btn:hover {
   background: var(--dark-text-color-);
   color: var(--dark-body-bg);
-  border-color:transparent;
+  border-color: transparent;
 }
 
-.btn-primary{
+.btn-primary {
   background: var(--color-primary);
-  color:var(--dark-body-bg)
+  color: var(--dark-body-bg)
 }
 
-img{
+img {
   display: block;
   width: 100%;
   object-fit: cover;
 }
 
 /* ============================MEDIUM DEVICES=============================*/
-@media screen and (max-width: 1024px){
-  .container{
+@media screen and (max-width: 1024px) {
+  .container {
     width: var(--container-width-md);
   }
-  section{
+
+  section {
     margin-top: 6rem;
   }
 }
+
 /* ============================SMALL DEVICES=============================*/
-@media screen and (max-width: 600){
-  .container{
+@media screen and (max-width: 600) {
+  .container {
     width: var(--container-width-sm);
   }
-  section > h2{
+
+  section>h2 {
     margin-bottom: 2rem;
   }
 }
